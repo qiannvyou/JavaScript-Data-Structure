@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>05reduce方法</title>
+	</head>
+	<body>
+	</body>
+	<script>
+	    // 1.定义数组
+	    var numbers = [1, 2, 3, 4]
+	
+	    // 2.for实现累加
+		/* var total = 0;
+		for(var i=0;i<numbers.length;i++){
+			total+=numbers[i]
+		}
+		console.log(total) */
+	
+	    // 3.使用forEach
+		/* var total = 0;
+		numbers.forEach(function(t){
+			total+=t;
+		})
+		console.log(total) */
+	
+	    // 4.使用reduce方法
+		var total = numbers.reduce(function(pre,crr){
+			return pre + crr;
+		})
+		console.log(total)
+	    
+	</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>创建和初始化数组</title>
+	</head>
+	<body>
+	</body>
+	<script>
+		// 创建和初始化数组
+		    var daysOfWeek = new Array()
+		    var daysOfWeek = new Array(7)
+		    var daysOfWeek = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday',
+		        'Thursday', 'Friday', 'Saturday')
+		
+		    // 直接赋值数组内容
+		    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+		        'Thursday', 'Friday', 'Saturday'];
+		
+		    // 获取数组的长度
+		//    alert(daysOfWeek.length)
+		//
+		//    // 普通for方式遍历数组
+		//    for (var i = 0; i < daysOfWeek.length; i++) {
+		//        alert(daysOfWeek[i])
+		//    }
+		//
+		//    // 通过foreach遍历数组
+		//    daysOfWeek.forEach(function (value) {
+		//        alert(value)
+		//    })
+		
+		//练习: 求菲波那切数列的前20个数字, 并且放在数组中.菲波那切数列数列第一个数字是1, 第二个数字也是1, 第三项是前两项的和
+		var list = []
+		list[0]=1;
+		list[1]=1;
+		for(var i =2;i<20;i++){
+			list[i]=list[i-2]+list[i-1]
+		}
+		 console.log(list)
+	</script>
+</html>

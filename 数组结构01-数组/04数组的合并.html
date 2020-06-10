@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>04数组的合并</title>
+	</head>
+	<body>
+	</body>
+	<script>
+	   // 数组的合并
+	   //用concat拼接
+	   var nums1 = [1, 2, 3]
+	   var nums2 = [100, 200, 300]
+	   var numbers = nums1.concat(nums2)
+	   //或直接用+拼接
+	   var numbers = nums1 + nums2
+	   console.log(numbers)
+	
+	    // 定义数组
+	    var names = ["abc", "cb", "mba", "dna"]
+	
+	    // 在names中所有的元素后面拼接-abc
+	    /* var newNames = names.map(function(t){
+			return t+'-abc'
+		})
+		console.log(newNames) */
+	
+	   // 获取names中所有包含'a'字符的元素
+	   /* var newNames = names.filter(function(t){
+		   return t.indexOf('a')!=-1;
+	   })	
+	   console.log(newNames) */
+		
+	   // forEach的使用
+	  /* names.forEach(function(t){
+		   console.log(names)
+	   }) */
+	
+	   // 判断数组中是否包含有a字符的字符
+	   /* var flag = names.some(function(t){
+		   return t.indexOf('a')!=-1;
+	   })
+	   console.log(flag) */
+	
+	   // 判断数组的元素是否都包含a字符
+	   var flag = names.every(function(t){
+		   return t.indexOf('a')!=-1
+	   })
+	   console.log(flag)
+	</script>
+</html>
